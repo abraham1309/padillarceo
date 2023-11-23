@@ -21,7 +21,7 @@
 
 .header-area {
     position: absolute;
-    width: 100vw;
+    width: 100%;
     z-index: 1;
 }
 
@@ -220,43 +220,82 @@
 
 /*Estilos para el carrusel de incio*/
 
-.seccion-inicio .div-general-carrusel-inicio {
-    position: absolute !important;
-    width: 100vw;
+.seccion-inicio {
     height: 100vh;
+    width: 100%;
 }
 
-.seccion-inicio .div-general-carrusel-inicio .contenedor-carrusel-inicio {
+.seccion-inicio .contenedor-carrusel-inicio {
+    height: 100vh;
+    width: 100%;
+}
+
+.seccion-inicio .contenedor-carrusel-inicio .swiper-wrapper .swiper-slide {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.seccion-inicio .contenedor-carrusel-inicio .swiper-wrapper .swiper-slide .div-general-contenido {
+    width: 90%;
+    height: 70%;
+    z-index: 4;
+}
+
+.seccion-inicio .contenedor-carrusel-inicio .swiper-wrapper .swiper-slide .div-general-contenido .div-informacion {
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
 
-.seccion-principal {
-    height: 100vh;
-    width: 100%;
+.seccion-inicio .contenedor-carrusel-inicio .swiper-wrapper .swiper-slide .div-general-contenido .div-informacion .img-logotipo {
+    width: 40%;
 }
 
-.seccion-principal .div-color-fondo {
+.seccion-inicio .contenedor-carrusel-inicio .swiper-wrapper .swiper-slide .div-general-contenido .div-informacion h2 {
+    font-family: 'Century gothic';
+    color: #fff;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.seccion-inicio .contenedor-carrusel-inicio .swiper-wrapper .swiper-slide .div-general-contenido .div-informacion p {
+    font-family: 'Century gothic';
+    color: #fff;
+    font-size: 30px;
+}
+
+.seccion-inicio .contenedor-carrusel-inicio .swiper-wrapper .swiper-slide .div-color-fondo {
+    /* Estilos generales para el color de la imagen */
     position: absolute;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-color: rgba(12, 31, 66, 0.50);
-    z-index: 2;
+    z-index: -1;
 }
 
-.seccion-principal .div-fondo {
+.seccion-inicio .contenedor-carrusel-inicio .swiper-wrapper .swiper-slide .div-imagen-fondo {
+    /* Estilos generales para la imagen de fondo */
     position: absolute;
     height: 100vh;
     width: 100%;
-    background: url("../Imagenes/Abogados.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    z-index: -2;
 }
 
-.seccion-principal .div-general {
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-    z-index: 1;
+.seccion-inicio .contenedor-carrusel-inicio .swiper-wrapper .swiper-slide .imagen-1 {
+    background: url("../Imagenes/fondo-centro-hojas.png");
+}
+
+.seccion-inicio .contenedor-carrusel-inicio .swiper-wrapper .swiper-slide .imagen-2 {
+    background: url("../Imagenes/familia-grande.jpg");
 }
