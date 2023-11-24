@@ -297,5 +297,57 @@
 }
 
 .seccion-inicio .contenedor-carrusel-inicio .swiper-wrapper .swiper-slide .imagen-2 {
-    background: url("../Imagenes/familia-grande.jpg");
+    background: url("../Imagenes/derecho-civil-grande.jpg");
+}
+
+.seccion-inicio .contenedor-carrusel-inicio .swiper-wrapper .swiper-slide .imagen-3 {
+    background: url("../Imagenes/derecho-mercantil-grande.jpg");
+}
+
+.seccion-inicio .contenedor-carrusel-inicio .swiper-wrapper .swiper-slide .imagen-4 {
+    background: url("../Imagenes/derecho-sucesorio-grande.jpg");
+}
+
+.seccion-inicio .contenedor-carrusel-inicio .swiper-wrapper .swiper-slide .imagen-5 {
+    background: url("../Imagenes/derecho-agrario-grande.jpg");
+}
+
+.seccion-inicio .contenedor-carrusel-inicio .swiper-wrapper .swiper-slide .imagen-6 {
+    background: url("../Imagenes/derecho-civil-grande.jpg");
+}
+
+.seccion-inicio .contenedor-carrusel-inicio .swiper-wrapper .swiper-slide .imagen-7 {
+    background: url("../Imagenes/derecho-civil-grande.jpg");
+}
+
+.seccion-inicio .contenedor-carrusel-inicio .swiper-wrapper .swiper-slide .imagen-8 {
+    background: url("../Imagenes/derecho-civil-grande.jpg");
+}
+
+@media (max-width: 500px) {
+    .seccion-inicio .contenedor-carrusel-inicio .swiper-wrapper .swiper-slide .div-general-contenido {
+        width: 80%;
+    }
+
+    .seccion-inicio .contenedor-carrusel-inicio .swiper-wrapper .swiper-slide .div-general-contenido .div-informacion h2 {
+        font-size: 45px;
+    }
+
+    .seccion-inicio .contenedor-carrusel-inicio .swiper-wrapper .swiper-slide .div-general-contenido .div-informacion p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 390px) {
+    .seccion-inicio .contenedor-carrusel-inicio .swiper-wrapper .swiper-slide .div-general-contenido {
+        width: 75%;
+    }
+
+    .seccion-inicio .contenedor-carrusel-inicio .swiper-wrapper .swiper-slide .div-general-contenido .div-informacion h2 {
+        font-size: 30px;
+    }
+
+    .seccion-inicio .contenedor-carrusel-inicio .swiper-wrapper .swiper-slide .div-general-contenido .div-informacion p {
+        font-size: 18px;
+    }
 }
