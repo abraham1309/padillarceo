@@ -313,26 +313,24 @@
 }
 
 .seccion-inicio .contenedor-carrusel-inicio .swiper-wrapper .swiper-slide .imagen-6 {
-    background: url("../Imagenes/derecho-civil-grande.jpg");
+    background: url("../Imagenes/derecho-inmobiliario-grande.jpg");
 }
 
 .seccion-inicio .contenedor-carrusel-inicio .swiper-wrapper .swiper-slide .imagen-7 {
-    background: url("../Imagenes/derecho-civil-grande.jpg");
+    background: url("../Imagenes/gestorias.jpg");
 }
 
 .seccion-inicio .contenedor-carrusel-inicio .swiper-wrapper .swiper-slide .imagen-8 {
-    background: url("../Imagenes/derecho-civil-grande.jpg");
+    background: url("../Imagenes/otros-grande.jpg");
 }
 
 @media (max-width: 500px) {
     .seccion-inicio .contenedor-carrusel-inicio .swiper-wrapper .swiper-slide .div-general-contenido {
         width: 80%;
     }
-
     .seccion-inicio .contenedor-carrusel-inicio .swiper-wrapper .swiper-slide .div-general-contenido .div-informacion h2 {
         font-size: 45px;
     }
-
     .seccion-inicio .contenedor-carrusel-inicio .swiper-wrapper .swiper-slide .div-general-contenido .div-informacion p {
         font-size: 20px;
     }
@@ -342,11 +340,9 @@
     .seccion-inicio .contenedor-carrusel-inicio .swiper-wrapper .swiper-slide .div-general-contenido {
         width: 75%;
     }
-
     .seccion-inicio .contenedor-carrusel-inicio .swiper-wrapper .swiper-slide .div-general-contenido .div-informacion h2 {
         font-size: 30px;
     }
-
     .seccion-inicio .contenedor-carrusel-inicio .swiper-wrapper .swiper-slide .div-general-contenido .div-informacion p {
         font-size: 18px;
     }
