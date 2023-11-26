@@ -7,11 +7,15 @@ var swiper = new Swiper('.contenedor-carrusel-inicio', {
     spaceBetween: 10,
     loop: "true",
     // init: false,
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
     },
-
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets: true,
+    },
 
     breakpoints: {
         620: {
