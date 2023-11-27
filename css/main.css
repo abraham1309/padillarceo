@@ -51,6 +51,28 @@
     font-size: 25px;
 }
 
+.navbar-collapse .div-info-contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-collapse .div-info-contacto a {
+    font-family: 'Agency FB';
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-collapse .div-info-contacto .a-numero {
+    padding-right: 20px;
+    border-right: 1px solid var(--azulClaro);
+}
+
+.navbar-collapse .div-info-contacto .a-correo {
+    padding-left: 20px;
+}
+
 .navbar-dark .navbar-nav .nav-link {
     position: relative;
     color: #fff;
@@ -71,7 +93,7 @@
     position: relative;
     padding: 10px 20px;
     color: #fff;
-    border-bottom: 1px solid rgba(255, 255, 255, .1);
+    border-bottom: 1px solid rgba(255, 0, 0, 0.1);
     transition: color 0.2s ease-in;
 }
 
@@ -81,7 +103,7 @@
 
 .navbar .dropdown-menu .dropdown-item:hover {
     background: transparent;
-    color: #c0ca33;
+    color: #A8C1F0;
 }
 
 .navbar .dropdown-menu .dropdown-item::before {
@@ -91,7 +113,7 @@
     left: 0;
     top: 0;
     width: 5px;
-    background-color: #c0ca33;
+    background-color: #A8C1F0;
     opacity: 0;
     transition: opacity 0.2s ease-in;
 }
@@ -148,6 +170,13 @@
         -webkit-transform-origin: top;
         -ms-transform-origin: top;
         transform-origin: top;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-collapse {
+        align-items: center;
+        text-align: center;
     }
 }
 
@@ -498,5 +527,131 @@
     }
     .seccion-nuestra-firma .div-general-nuestra-firma .div-fondo-imagen .imagen-nuestra-firma {
         height: 65%;
+    }
+}
+
+
+/* Estilos para nuestra mision y vision */
+
+.seccion-nuestra {
+    width: 100%;
+    height: auto;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F1F1F1;
+}
+
+.seccion-nuestra .div-informacion {
+    width: 90%;
+}
+
+.seccion-nuestra .div-informacion h2 {
+    color: var(--azulFuerte);
+    font-size: 60px;
+    font-family: 'Agency FB';
+    font-weight: bold;
+}
+
+.seccion-nuestra .div-informacion p {
+    color: #000;
+    font-size: 25px;
+    font-family: 'Century gothic';
+    text-align: justify;
+}
+
+
+/* Estilos para la seccion de cursos */
+
+.seccion-cursos {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-cursos .div-informacion-cursos {
+    width: 70%;
+    text-align: center;
+}
+
+.seccion-cursos .div-informacion-cursos h2 {
+    color: #fff;
+    font-size: 60px;
+    font-family: 'Agency FB';
+    font-weight: bold;
+    line-height: 55px;
+}
+
+.seccion-cursos .div-informacion-cursos p {
+    margin-top: -10px;
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Century gothic';
+}
+
+.seccion-cursos .div-informacion-cursos a {
+    border: 1px solid var(--azulClaro);
+    padding: 7px 50px 7px 50px;
+    color: var(--azulClaro);
+    font-size: 20px;
+    font-family: 'Century gothic';
+    text-decoration: none;
+    border-radius: 10px;
+    transition: all 1s ease;
+}
+
+.seccion-cursos .div-informacion-cursos a:hover {
+    background: #edf8ff;
+    color: var(--azulFuerte);
+    border-color: var(--azulFuerte);
+}
+
+.seccion-cursos .div-fondo-foto {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient( to bottom, rgba(12, 31, 66, 0.60), rgba(12, 31, 66, 0.60)), url("../Imagenes/Abogados.jpg");
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-attachment: fixed;
+    z-index: -2;
+}
+
+@media (max-width: 500px) {
+    .seccion-nuestra .div-informacion h2 {
+        font-size: 50px;
+    }
+    .seccion-nuestra .div-informacion p {
+        font-size: 18px;
+    }
+    .seccion-cursos .div-informacion-cursos {
+        width: 90%;
+    }
+    .seccion-cursos .div-informacion-cursos h2 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .seccion-cursos .div-informacion-cursos p {
+        margin-top: 0px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 380px) {
+    .seccion-cursos .div-informacion-cursos h2 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .seccion-cursos .div-informacion-cursos p {
+        font-size: 18px;
+    }
+    .seccion-cursos .div-informacion-cursos a {
+        padding: 7px 30px 7px 30px;
+        font-size: 18px;
     }
 }
