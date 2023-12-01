@@ -1009,3 +1009,230 @@ footer .div-informacion .div-informacion-legal .a-politica {
         font-size: 18px;
     }
 }
+
+
+/* --- Estilos para la pagina de cursos y catedras --- */
+
+
+/* Seccion inicio */
+
+.seccion-inicio-curso {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-inicio-curso .div-texto h2 {
+    color: #fff;
+    font-size: 80px;
+    font-family: 'Agency FB';
+    font-weight: bold;
+}
+
+.seccion-inicio-curso .div-imagen-fondo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-image: linear-gradient( to bottom, rgba(12, 31, 66, 0.60), rgba(12, 31, 66, 0.60)), url("../Imagenes/Fondo-sobre-nosotros.jpg");
+    z-index: -2;
+}
+
+
+/* Estilos para la seccion de nuestra mision, objectivos y valores */
+
+.seccion-nuestra-informacion {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.seccion-nuestra-informacion .div-mision {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.seccion-nuestra-informacion .div-mision .div-texto {
+    width: 90%;
+}
+
+.seccion-nuestra-informacion .div-mision .div-texto h2 {
+    font-family: 'Agency FB';
+    color: var(--azulFuerte);
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.seccion-nuestra-informacion .div-mision .div-texto p {
+    font-size: 20px;
+    font-family: 'Century gothic';
+}
+
+.seccion-nuestra-informacion .div-objectivos-valores {
+    height: 70%;
+    width: 100%;
+    display: flex;
+}
+
+.seccion-nuestra-informacion .div-objectivos-valores .div-imagen-fondo {
+    position: absolute;
+    height: 70%;
+    width: 50%;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    z-index: -2;
+}
+
+.seccion-nuestra-informacion .div-objectivos-valores .fondo-objectivos {
+    background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../Imagenes/objetivos.jpg");
+}
+
+.seccion-nuestra-informacion .div-objectivos-valores .fondo-valores {
+    background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../Imagenes/lupa.jpg");
+}
+
+.seccion-nuestra-informacion .div-objectivos-valores .div-objectivos {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-nuestra-informacion .div-objectivos-valores .div-objectivos .div-texto {
+    height: auto;
+    width: 90%;
+}
+
+.seccion-nuestra-informacion .div-objectivos-valores .div-objectivos .div-texto h2 {
+    color: #fff;
+    font-size: 50px;
+    font-family: 'Agency FB';
+    font-weight: bold;
+}
+
+.seccion-nuestra-informacion .div-objectivos-valores .div-objectivos .div-texto p {
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Century gothic';
+    text-align: left;
+}
+
+.seccion-nuestra-informacion .div-objectivos-valores .div-valores {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-nuestra-informacion .div-objectivos-valores .div-valores {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-nuestra-informacion .div-objectivos-valores .div-valores .div-texto {
+    height: auto;
+    width: 90%;
+}
+
+.seccion-nuestra-informacion .div-objectivos-valores .div-valores .div-texto h2 {
+    color: #fff;
+    font-size: 60px;
+    font-family: 'Agency FB';
+    font-weight: bold;
+}
+
+.seccion-nuestra-informacion .div-objectivos-valores .div-valores .div-texto p,
+ul {
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Century gothic';
+    text-align: left;
+}
+
+.seccion-nuestra-informacion .div-objectivos-valores .div-valores .div-texto ul {
+    line-height: 32px;
+}
+
+@media (max-width: 1200px) {
+    .seccion-nuestra-informacion .div-mision {
+        height: auto;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .seccion-nuestra-informacion .div-objectivos-valores .div-objectivos {
+        height: 80%;
+    }
+    .seccion-nuestra-informacion .div-objectivos-valores .div-valores {
+        height: 80%;
+    }
+    .seccion-nuestra-informacion .div-objectivos-valores .div-imagen-fondo {
+        height: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    .seccion-inicio-curso .div-texto h2 {
+        font-size: 40px;
+        text-align: center;
+    }
+    .seccion-nuestra-informacion {
+        height: auto;
+    }
+    .seccion-nuestra-informacion .div-mision .div-texto h2 {
+        font-size: 40px;
+    }
+    .seccion-nuestra-informacion .div-mision .div-texto p {
+        font-size: 18px;
+        text-align: justify;
+    }
+    .seccion-nuestra-informacion .div-objectivos-valores .div-objectivos .div-texto h2 {
+        font-size: 40px;
+    }
+    .seccion-nuestra-informacion .div-objectivos-valores .div-objectivos .div-texto p {
+        font-size: 18px;
+        text-align: justify;
+    }
+    .seccion-nuestra-informacion .div-objectivos-valores .div-valores .div-texto h2 {
+        font-size: 40px;
+    }
+    .seccion-nuestra-informacion .div-objectivos-valores .div-valores .div-texto p,
+    ul {
+        font-size: 18px;
+        text-align: justify;
+    }
+    .seccion-nuestra-informacion .div-objectivos-valores {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .seccion-nuestra-informacion .div-objectivos-valores .div-objectivos {
+        height: 450px;
+        width: 100%;
+    }
+    .seccion-nuestra-informacion .div-objectivos-valores .div-valores {
+        height: 500px;
+        width: 100%;
+    }
+    .seccion-nuestra-informacion .div-objectivos-valores .div-imagen-fondo {
+        height: 500px;
+        width: 100%;
+    }
+}
