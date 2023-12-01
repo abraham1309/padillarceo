@@ -178,6 +178,11 @@
         align-items: center;
         text-align: center;
     }
+    .navbar .dropdown-menu {
+        margin-left: 0px;
+        width: 250px;
+        text-align: center;
+    }
 }
 
 @-webkit-keyframes navbar-animation {
