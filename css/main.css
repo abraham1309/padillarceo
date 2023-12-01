@@ -378,7 +378,7 @@
         width: 80%;
     }
     .seccion-inicio .contenedor-carrusel-inicio .swiper-wrapper .swiper-slide .div-general-contenido .div-informacion h2 {
-        font-size: 45px;
+        font-size: 40px;
     }
     .seccion-inicio .contenedor-carrusel-inicio .swiper-wrapper .swiper-slide .div-general-contenido .div-informacion p {
         font-size: 20px;
@@ -510,7 +510,7 @@
         height: 55%;
     }
     .seccion-nuestra-firma .div-general-nuestra-firma .div-fondo-imagen .div-general-contenido h2 {
-        font-size: 50px;
+        font-size: 40px;
     }
     .seccion-nuestra-firma .div-general-nuestra-firma .div-fondo-imagen .div-general-contenido p {
         font-size: 18px;
@@ -624,7 +624,7 @@
 
 @media (max-width: 500px) {
     .seccion-nuestra .div-informacion h2 {
-        font-size: 50px;
+        font-size: 40px;
     }
     .seccion-nuestra .div-informacion p {
         font-size: 18px;
@@ -656,9 +656,13 @@
     }
 }
 
+
 /*---ESTILOS PARA LA SECCION AREAS DE PRACTICA---*/
+
+
 /*Estilos para el carrusel*/
-.seccion-carrusel{
+
+.seccion-carrusel {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -666,7 +670,8 @@
     justify-content: center;
     align-items: center;
 }
-.seccion-carrusel h2{
+
+.seccion-carrusel h2 {
     margin-top: 5%;
     font-family: 'Agency FB';
     color: var(--azulFuerte);
@@ -674,18 +679,18 @@
     font-weight: bold;
 }
 
-.seccion-carrusel .contenedor-carrusel-areas{
+.seccion-carrusel .contenedor-carrusel-areas {
     width: 90%;
     height: 60%;
     text-align: center;
 }
 
-.seccion-carrusel .contenedor-carrusel-areas .swiper-wrapper .swiper-slide{
+.seccion-carrusel .contenedor-carrusel-areas .swiper-wrapper .swiper-slide {
     width: 100%;
     height: 100%;
 }
 
-.seccion-carrusel .contenedor-carrusel-areas .swiper-wrapper .swiper-slide .div-general-contenido{
+.seccion-carrusel .contenedor-carrusel-areas .swiper-wrapper .swiper-slide .div-general-contenido {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -695,13 +700,13 @@
     flex-direction: column;
 }
 
-.seccion-carrusel .contenedor-carrusel-areas .swiper-wrapper .swiper-slide .div-general-contenido h3{
+.seccion-carrusel .contenedor-carrusel-areas .swiper-wrapper .swiper-slide .div-general-contenido h3 {
     color: #fff;
     font-family: 'Century gothic';
     font-size: 30px;
 }
 
-.seccion-carrusel .contenedor-carrusel-areas .swiper-wrapper .swiper-slide .div-general-contenido a{
+.seccion-carrusel .contenedor-carrusel-areas .swiper-wrapper .swiper-slide .div-general-contenido a {
     padding: 3px 15px 3px 15px;
     border: 1px solid var(--azulClaro);
     border-radius: 3px;
@@ -718,7 +723,7 @@
     border-color: var(--azulFuerte);
 }
 
-.seccion-carrusel .contenedor-carrusel-areas .swiper-wrapper .div-imagen-fondo{
+.seccion-carrusel .contenedor-carrusel-areas .swiper-wrapper .div-imagen-fondo {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -728,79 +733,73 @@
     background-attachment: fixed;
     z-index: -2;
     border-radius: 15px;
-
 }
 
-.seccion-carrusel .contenedor-carrusel-areas .swiper-wrapper .imagen-1{
-    background-image: linear-gradient( to bottom, rgba(12, 31, 66, 0.60), rgba(12, 31, 66, 0.60)), url("../Imagenes/derecho-civil-carrusel.jpg");
-
+.seccion-carrusel .contenedor-carrusel-areas .swiper-wrapper .imagen-1 {
+    background-image: linear-gradient( to bottom, rgba(12, 31, 66, 0.60), rgba(12, 31, 66, 0.60)), url("../Imagenes/derecho-civil-grande.jpg");
 }
 
-.seccion-carrusel .contenedor-carrusel-areas .swiper-wrapper .imagen-2{
-    background-image: linear-gradient( to bottom, rgba(12, 31, 66, 0.60), rgba(12, 31, 66, 0.60)), url("../Imagenes/derecho-mercantil-carrusel.jpg");
+.seccion-carrusel .contenedor-carrusel-areas .swiper-wrapper .imagen-2 {
+    background-image: linear-gradient( to bottom, rgba(12, 31, 66, 0.60), rgba(12, 31, 66, 0.60)), url("../Imagenes/derecho-mercantil-grande.jpg");
 }
 
-.seccion-carrusel .contenedor-carrusel-areas .swiper-wrapper .imagen-3{
-    background-image: linear-gradient( to bottom, rgba(12, 31, 66, 0.60), rgba(12, 31, 66, 0.60)), url("../Imagenes/derecho-sucesorio-carrusel.jpg");
+.seccion-carrusel .contenedor-carrusel-areas .swiper-wrapper .imagen-3 {
+    background-image: linear-gradient( to bottom, rgba(12, 31, 66, 0.60), rgba(12, 31, 66, 0.60)), url("../Imagenes/derecho-sucesorio-grande.jpg");
 }
 
-.seccion-carrusel .contenedor-carrusel-areas .swiper-wrapper .imagen-4{
-    background-image: linear-gradient( to bottom, rgba(12, 31, 66, 0.60), rgba(12, 31, 66, 0.60)), url("../Imagenes/derecho-agrario-carrusel.jpg");
+.seccion-carrusel .contenedor-carrusel-areas .swiper-wrapper .imagen-4 {
+    background-image: linear-gradient( to bottom, rgba(12, 31, 66, 0.60), rgba(12, 31, 66, 0.60)), url("../Imagenes/derecho-agrario-grande.jpg");
 }
 
-.seccion-carrusel .contenedor-carrusel-areas .swiper-wrapper .imagen-5{
+.seccion-carrusel .contenedor-carrusel-areas .swiper-wrapper .imagen-5 {
     background-image: linear-gradient( to bottom, rgba(12, 31, 66, 0.60), rgba(12, 31, 66, 0.60)), url("../Imagenes/derecho-inmobiliario-grande.jpg");
 }
 
-.seccion-carrusel .contenedor-carrusel-areas .swiper-wrapper .imagen-6{
+.seccion-carrusel .contenedor-carrusel-areas .swiper-wrapper .imagen-6 {
     background-image: linear-gradient( to bottom, rgba(12, 31, 66, 0.60), rgba(12, 31, 66, 0.60)), url("../Imagenes/gestorias.jpg");
 }
 
-.seccion-carrusel .contenedor-carrusel-areas .swiper-wrapper .imagen-7{
+.seccion-carrusel .contenedor-carrusel-areas .swiper-wrapper .imagen-7 {
     background-image: linear-gradient( to bottom, rgba(12, 31, 66, 0.60), rgba(12, 31, 66, 0.60)), url("../Imagenes/otros-grande.jpg");
 }
 
-
 @media (max-width: 500px) {
-    .seccion-carrusel{
+    .seccion-carrusel {
         justify-content: flex-end;
         align-items: center;
     }
-    
     .seccion-carrusel h2 {
-        font-size: 50px;
+        font-size: 40px;
     }
-
-    .seccion-carrusel .contenedor-carrusel-areas{
+    .seccion-carrusel .contenedor-carrusel-areas {
         width: 100%;
         height: 80%;
         text-align: center;
     }
-
-    .seccion-carrusel .contenedor-carrusel-areas .swiper-wrapper .div-imagen-fondo{
+    .seccion-carrusel .contenedor-carrusel-areas .swiper-wrapper .div-imagen-fondo {
         border-radius: 0px;
     }
-    
 }
 
 @media (max-width: 380px) {
     .seccion-carrusel h2 {
         font-size: 40px;
     }
-
-    .seccion-carrusel .contenedor-carrusel-areas{
+    .seccion-carrusel .contenedor-carrusel-areas {
         height: 75%;
     }
 }
 
+
 /* Estilos para el footer */
-footer{
+
+footer {
     width: 100%;
     height: 250px;
     background-color: #050d1b;
 }
 
-footer .div-general-logo{
+footer .div-general-logo {
     width: 100%;
     height: 30%;
     display: flex;
@@ -808,13 +807,13 @@ footer .div-general-logo{
     align-items: center;
 }
 
-footer .div-general-logo .div-linea-1{
+footer .div-general-logo .div-linea-1 {
     width: 40%;
     height: 1%;
     background-color: var(--azulClaro);
 }
 
-footer .div-general-logo .div-logo{
+footer .div-general-logo .div-logo {
     width: 10%;
     height: 100%;
     display: flex;
@@ -822,17 +821,17 @@ footer .div-general-logo .div-logo{
     align-items: center;
 }
 
-footer .div-general-logo .div-logo h1{
+footer .div-general-logo .div-logo h1 {
     color: var(--azulClaro);
 }
 
-footer .div-general-logo .div-linea-2{
+footer .div-general-logo .div-linea-2 {
     width: 40%;
     height: 1%;
     background-color: var(--azulClaro);
 }
 
-footer .div-informacion{
+footer .div-informacion {
     width: 100%;
     height: 70%;
     display: flex;
@@ -841,22 +840,21 @@ footer .div-informacion{
     flex-direction: column;
 }
 
-footer .div-informacion p{
+footer .div-informacion p {
     color: #fff;
     font-family: 'Century gothic';
     font-size: 19px;
 }
 
-
-footer .div-informacion .div-informacion-legal .a-informacion{
+footer .div-informacion .div-informacion-legal .a-informacion {
     color: #fff;
     font-family: 'Century gothic';
     font-size: 19px;
     text-align: center;
-    padding-right: 10px; 
+    padding-right: 10px;
 }
 
-footer .div-informacion .div-informacion-legal .a-politica{
+footer .div-informacion .div-informacion-legal .a-politica {
     color: #fff;
     font-family: 'Century gothic';
     font-size: 19px;
@@ -865,31 +863,144 @@ footer .div-informacion .div-informacion-legal .a-politica{
     border-left: 1px solid var(--azulClaro);
 }
 
-
 @media (max-width: 500px) {
     footer .div-informacion {
         justify-content: flex-start;
-        
     }
-
-    footer .div-informacion .div-informacion-legal .a-informacion{
-        padding-right: 0; 
+    footer .div-informacion .div-informacion-legal .a-informacion {
+        padding-right: 0;
         margin-bottom: 5px;
     }
-    
-    footer .div-informacion .div-informacion-legal .a-politica{
+    footer .div-informacion .div-informacion-legal .a-politica {
         padding-left: 0;
         border: none;
     }
-
     footer .div-informacion .div-informacion-legal {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
-    
-    footer{
+    footer {
         height: 350px;
+    }
+}
+
+
+/* --- Estilos para las paginas de areas de practicas individuales --- */
+
+
+/* Estilos generales para todas las paginas  */
+
+.seccion-imagen {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-imagen .div-imagen-fondo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-attachment: fixed;
+    background-image: url("../Imagenes/derecho-civil-grande.jpg");
+    z-index: -2;
+}
+
+.seccion-informacion {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-informacion .div-general-informacion {
+    width: 90%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F1F1F1;
+}
+
+.seccion-informacion .div-general-informacion h2 {
+    font-family: 'Agency FB';
+    color: var(--azulFuerte);
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.seccion-informacion .div-general-informacion ul {
+    width: 90%;
+    text-align: left;
+    font-size: 25px;
+    font-family: 'Century gothic';
+    list-style-image: url(../Imagenes/paloma.png);
+}
+
+.seccion-informacion .div-general-informacion ul li {
+    margin-bottom: 15px;
+}
+
+.seccion-imagen .imagen-civil {
+    background-image: url("../Imagenes/derecho-civil-grande.jpg");
+}
+
+.seccion-imagen .imagen-mercantil {
+    background-image: url("../Imagenes/derecho-mercantil-grande.jpg");
+}
+
+.seccion-imagen .imagen-sucesorio {
+    background-image: url("../Imagenes/derecho-sucesorio-grande.jpg");
+}
+
+.seccion-imagen .imagen-agrario {
+    background-image: url("../Imagenes/derecho-agrario-grande.jpg");
+}
+
+.seccion-imagen .imagen-inmobiliario {
+    background-image: url("../Imagenes/derecho-inmobiliario-grande.jpg");
+}
+
+.seccion-imagen .imagen-gestorias {
+    background-image: url("../Imagenes/gestorias.jpg");
+}
+
+.seccion-imagen .imagen-otros {
+    background-image: url("../Imagenes/otros-grande.jpg");
+}
+
+@media (max-width: 500px) {
+    .seccion-informacion .div-general-informacion {
+        margin-bottom: 10%;
+        margin-top: 10%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .seccion-informacion .div-general-informacion h2 {
+        font-size: 40px;
+    }
+    .seccion-informacion .div-general-informacion ul {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 380px) {
+    .seccion-informacion .div-general-informacion h2 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .seccion-informacion .div-general-informacion ul {
+        font-size: 18px;
     }
 }
