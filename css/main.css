@@ -64,6 +64,11 @@
     text-decoration: none;
 }
 
+.navbar-collapse .div-info-contacto a img {
+    width: 25px;
+    margin-right: 5px;
+}
+
 .navbar-collapse .div-info-contacto .a-numero {
     padding-right: 20px;
     border-right: 1px solid var(--azulClaro);
@@ -950,6 +955,7 @@ footer .div-informacion .div-informacion-legal .a-politica {
     text-align: left;
     font-size: 25px;
     font-family: 'Century gothic';
+    color: #000;
     list-style-image: url(../Imagenes/paloma.png);
 }
 
