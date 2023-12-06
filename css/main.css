@@ -1242,3 +1242,143 @@ ul {
         width: 100%;
     }
 }
+
+/*Estilos para el numero de diplomados*/
+.seccion-diplomados{
+    width: 100%;
+    height: auto;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F1F1F1;
+}
+
+.seccion-diplomados .div-general{
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.seccion-diplomados .div-general .p-contamos{
+    font-size: 28px;
+    font-family: 'Century gothic';
+    text-align: center;
+}
+
+.seccion-diplomados .div-general .div-general-numeros{
+    width: 75%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.seccion-diplomados .div-general .div-general-numeros .div-numero{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.seccion-diplomados .div-general .div-general-numeros .div-numero .p-numero{
+    font-size: 100px;
+    font-family: 'Century gothic';
+    font-weight: bolder;
+    color: #EE6F23;
+}
+
+.seccion-diplomados .div-general .div-general-numeros .div-numero .p-derecho{
+    margin-top: -30px;
+    font-size: 30px;
+    font-family: 'Century gothic';
+    text-align: center;
+    line-height: 30px;
+}
+
+
+@media (max-width: 1135px) {
+    .seccion-diplomados .div-general .div-general-numeros{
+        width: 100%;
+    }
+}
+
+@media (max-width: 833px) {
+    .seccion-diplomados .div-general .div-general-numeros .div-numero{
+        width: 200px;
+        height: 200px;
+    }
+
+    
+    .seccion-diplomados .div-general .div-general-numeros .div-numero .p-numero{
+        font-size: 80px;
+    }
+
+    .seccion-diplomados .div-general .div-general-numeros .div-numero .p-derecho{
+        font-size: 25px;
+    }
+}
+
+
+@media (max-width: 667px) {
+    .seccion-diplomados .div-general .div-general-numeros .div-numero{
+        width: 150px;
+        height: 150px;
+    }
+
+    .seccion-diplomados .div-general .div-general-numeros .div-numero .p-numero{
+        font-size: 70px;
+    }
+
+    .seccion-diplomados .div-general .div-general-numeros .div-numero .p-derecho{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .seccion-diplomados .div-general .div-general-numeros{
+        justify-content: center;
+    }
+
+    .seccion-diplomados .div-general .div-general-numeros .div-izquierdo{
+        margin-right: 5%;
+    }
+    .seccion-diplomados .div-general .div-general-numeros .div-derecho{
+        margin-top: 5%;
+    }
+
+    .seccion-diplomados .div-general .div-general-numeros .div-numero .p-numero{
+        font-size: 60px;
+    }
+
+    .seccion-diplomados .div-general .div-general-numeros .div-numero .p-derecho{
+        font-size: 18px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 332px) {
+    .seccion-diplomados .div-general .div-general-numeros .div-izquierdo{
+        margin-right: 0;
+    }
+    .seccion-diplomados .div-general .div-general-numeros .div-derecho{
+        margin-top: 0;
+    }
+    .seccion-diplomados .div-general .div-general-numeros .div-centro{
+        margin-top: 8%;
+        margin-bottom: 8%;
+    }
+
+}
+
+
+
