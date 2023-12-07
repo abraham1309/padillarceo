@@ -1243,8 +1243,10 @@ ul {
     }
 }
 
+
 /*Estilos para el numero de diplomados*/
-.seccion-diplomados{
+
+.seccion-diplomados {
     width: 100%;
     height: auto;
     padding-top: 8%;
@@ -1255,7 +1257,7 @@ ul {
     background: #F1F1F1;
 }
 
-.seccion-diplomados .div-general{
+.seccion-diplomados .div-general {
     width: 90%;
     height: auto;
     display: flex;
@@ -1264,22 +1266,21 @@ ul {
     flex-direction: column;
 }
 
-.seccion-diplomados .div-general .p-contamos{
+.seccion-diplomados .div-general .p-contamos {
     font-size: 28px;
     font-family: 'Century gothic';
     text-align: center;
 }
 
-.seccion-diplomados .div-general .div-general-numeros{
+.seccion-diplomados .div-general .div-general-numeros {
     width: 75%;
     height: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
-.seccion-diplomados .div-general .div-general-numeros .div-numero{
+.seccion-diplomados .div-general .div-general-numeros .div-numero {
     width: 250px;
     height: 250px;
     display: flex;
@@ -1290,14 +1291,14 @@ ul {
     border-radius: 20px;
 }
 
-.seccion-diplomados .div-general .div-general-numeros .div-numero .p-numero{
+.seccion-diplomados .div-general .div-general-numeros .div-numero .p-numero {
     font-size: 100px;
     font-family: 'Century gothic';
     font-weight: bolder;
     color: #EE6F23;
 }
 
-.seccion-diplomados .div-general .div-general-numeros .div-numero .p-derecho{
+.seccion-diplomados .div-general .div-general-numeros .div-numero .p-derecho {
     margin-top: -30px;
     font-size: 30px;
     font-family: 'Century gothic';
@@ -1305,80 +1306,207 @@ ul {
     line-height: 30px;
 }
 
-
 @media (max-width: 1135px) {
-    .seccion-diplomados .div-general .div-general-numeros{
+    .seccion-diplomados .div-general .div-general-numeros {
         width: 100%;
     }
 }
 
 @media (max-width: 833px) {
-    .seccion-diplomados .div-general .div-general-numeros .div-numero{
+    .seccion-diplomados .div-general .div-general-numeros .div-numero {
         width: 200px;
         height: 200px;
     }
-
-    
-    .seccion-diplomados .div-general .div-general-numeros .div-numero .p-numero{
+    .seccion-diplomados .div-general .div-general-numeros .div-numero .p-numero {
         font-size: 80px;
     }
-
-    .seccion-diplomados .div-general .div-general-numeros .div-numero .p-derecho{
+    .seccion-diplomados .div-general .div-general-numeros .div-numero .p-derecho {
         font-size: 25px;
     }
 }
 
-
 @media (max-width: 667px) {
-    .seccion-diplomados .div-general .div-general-numeros .div-numero{
+    .seccion-diplomados .div-general .div-general-numeros .div-numero {
         width: 150px;
         height: 150px;
     }
-
-    .seccion-diplomados .div-general .div-general-numeros .div-numero .p-numero{
+    .seccion-diplomados .div-general .div-general-numeros .div-numero .p-numero {
         font-size: 70px;
     }
-
-    .seccion-diplomados .div-general .div-general-numeros .div-numero .p-derecho{
+    .seccion-diplomados .div-general .div-general-numeros .div-numero .p-derecho {
         font-size: 20px;
     }
 }
 
 @media (max-width: 500px) {
-    .seccion-diplomados .div-general .div-general-numeros{
+    .seccion-diplomados .div-general .div-general-numeros {
         justify-content: center;
     }
-
-    .seccion-diplomados .div-general .div-general-numeros .div-izquierdo{
+    .seccion-diplomados .div-general .div-general-numeros .div-izquierdo {
         margin-right: 5%;
     }
-    .seccion-diplomados .div-general .div-general-numeros .div-derecho{
+    .seccion-diplomados .div-general .div-general-numeros .div-derecho {
         margin-top: 5%;
     }
-
-    .seccion-diplomados .div-general .div-general-numeros .div-numero .p-numero{
+    .seccion-diplomados .div-general .div-general-numeros .div-numero .p-numero {
         font-size: 60px;
     }
-
-    .seccion-diplomados .div-general .div-general-numeros .div-numero .p-derecho{
+    .seccion-diplomados .div-general .div-general-numeros .div-numero .p-derecho {
         font-size: 18px;
         line-height: 20px;
     }
 }
 
 @media (max-width: 332px) {
-    .seccion-diplomados .div-general .div-general-numeros .div-izquierdo{
+    .seccion-diplomados .div-general .div-general-numeros .div-izquierdo {
         margin-right: 0;
     }
-    .seccion-diplomados .div-general .div-general-numeros .div-derecho{
+    .seccion-diplomados .div-general .div-general-numeros .div-derecho {
         margin-top: 0;
     }
-    .seccion-diplomados .div-general .div-general-numeros .div-centro{
+    .seccion-diplomados .div-general .div-general-numeros .div-centro {
         margin-top: 8%;
         margin-bottom: 8%;
     }
-
 }
 
 
+/*estilos para la seccion de perfiles*/
 
+.seccion-perfil {
+    width: 100%;
+    height: auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.seccion-perfil .div-general {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-perfil .div-general .div-general-foto {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.seccion-perfil .div-general .div-general-foto .div-foto {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-perfil .div-general .div-general-foto .div-foto img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.seccion-perfil .div-general .div-informacion {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.seccion-perfil .div-general .div-informacion .div-text {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.seccion-perfil .div-general .div-informacion .div-text h2 {
+    font-family: 'Century gothic';
+    font-size: 35px;
+    color: var(--azulFuerte);
+}
+
+.seccion-perfil .div-general .div-informacion .div-text .p-cargo {
+    font-family: 'Century gothic';
+    font-size: 30px;
+    margin-top: -15px;
+}
+
+.seccion-perfil .div-general .div-informacion .div-text .p-informacion {
+    font-family: 'Century gothic';
+    font-size: 23px;
+}
+
+.seccion-perfil .div-general .div-informacion .div-text a {
+    width: 200px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border: 1px solid #0960ec;
+    text-align: center;
+    color: #0960ec;
+    font-family: 'Century gothic';
+    color: 23px;
+    text-decoration: none;
+    transition: all 1s ease;
+}
+
+.seccion-perfil .div-general .div-informacion .div-text a:hover {
+    background: #d7eeff;
+}
+
+.seccion-perfil .div-general .div-informacion .div-text img {
+    width: 350px;
+}
+
+@media (max-width: 1300px) {
+    .seccion-perfil .div-general .div-informacion .div-text h2 {
+        font-size: 30px;
+    }
+    .seccion-perfil .div-general .div-informacion .div-text .p-cargo {
+        font-size: 25px;
+    }
+    .seccion-perfil .div-general .div-informacion .div-text .p-informacion {
+        font-size: 20px;
+    }
+    .seccion-perfil .div-general .div-informacion .div-text img {
+        width: 250px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .pefil-christian {
+        margin-top: 10%;
+    }
+    .seccion-perfil .div-general {
+        flex-direction: column;
+    }
+    .seccion-perfil .div-general .div-general-foto {
+        width: 90%;
+    }
+    .seccion-perfil .div-general .div-general-foto .div-foto {
+        width: 100%;
+    }
+    .seccion-perfil .div-general .div-informacion {
+        margin-top: 5%;
+        width: 90%;
+    }
+    .seccion-perfil .div-general .div-informacion .div-text {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .seccion-perfil .div-general .div-informacion .div-text h2 {
+        text-align: center;
+    }
+    .seccion-perfil .div-general .div-informacion .div-text .p-informacion {
+        text-align: justify;
+    }
+}
+
+@media (max-width: 600px) {
+    .seccion-perfil .div-general .div-informacion .div-text .p-informacion {
+        font-size: 18px;
+    }
+}

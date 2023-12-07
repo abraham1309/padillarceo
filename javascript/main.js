@@ -34,38 +34,47 @@ jQuery(function($) {
 });
 
 /* Script para el contador */
-/* Script para el contador */
-const contadores = document.querySelectorAll('.p-numero');
-const velocidad = 8000;
-const retraso = 1000;
+addEventListener('DOMContentLoaded', () => {
+    const contadores = document.querySelectorAll('.p-numero');
+    const velocidad = 450;
+    const retrasoInicial = 750; // Retraso
 
-const animarContadores = () => {
-    for (const contador of contadores) {
+    const animarContador = (contador, cantidadMaxima) => {
         const actualizarContador = () => {
-            let cantidadMaxima = +contador.dataset.cantidadTotal,
-                valorActual = +contador.innerText,
-                incremento = cantidadMaxima / velocidad;
+            let valorActual = +contador.innerText,
+                incremento = 1;
 
             if (valorActual < cantidadMaxima) {
                 contador.innerHTML = Math.ceil(valorActual + incremento);
-                setTimeout(actualizarContador, 300); // Ajusté el tiempo de espera para que vaya más lento
+                setTimeout(actualizarContador, velocidad);
             } else {
                 contador.innerText = cantidadMaxima;
             }
         };
+
         actualizarContador();
-    }
-};
+    };
 
-function estaEnLaMitad(elemento) {
-    var rect = elemento.getBoundingClientRect();
-    return rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2;
-}
+    const mostrarContadores = elementos => {
+        elementos.forEach(elemento => {
+            if (elemento.isIntersecting) {
+                const contador = elemento.target;
+                const cantidadMaxima = +contador.dataset.cantidadTotal;
 
-window.addEventListener('scroll', function() {
-    var miDiv = document.getElementById('seccionDiplomados');
+                // Agregar retraso inicial antes de iniciar la animación del contador
+                setTimeout(() => {
+                    animarContador(contador, cantidadMaxima);
+                }, retrasoInicial);
+            }
+        });
+    };
 
-    if (estaEnLaMitad(miDiv)) {
-        setTimeout(animarContadores, retraso);
-    }
+    const observer = new IntersectionObserver(mostrarContadores, {
+        threshold: 0.75
+    });
+
+    const elementosHTML = document.querySelectorAll('.p-numero');
+    elementosHTML.forEach(elementoHTML => {
+        observer.observe(elementoHTML);
+    });
 });
