@@ -47,8 +47,8 @@
 .navbar-collapse .div-items .nav-link {
     padding-top: 0px !important;
     padding-bottom: 20px !important;
-    font-family: 'Agency FB';
-    font-size: 25px;
+    font-family: 'Century gothic';
+    font-size: 20px;
 }
 
 .navbar-collapse .div-info-contacto {
@@ -58,8 +58,8 @@
 }
 
 .navbar-collapse .div-info-contacto a {
-    font-family: 'Agency FB';
-    font-size: 20px;
+    font-family: 'Century gothic';
+    font-size: 18px;
     color: #fff;
     text-decoration: none;
 }
@@ -186,6 +186,25 @@
     .navbar .dropdown-menu {
         margin-left: 0px;
         width: 250px;
+        text-align: center;
+    }
+    .navbar-collapse .div-info-contacto {
+        width: 90%;
+        margin-bottom: 3%;
+        border-bottom: 1px solid var(--azulClaro);
+        flex-direction: column;
+    }
+    .navbar-collapse .div-info-contacto a {
+        margin-bottom: 3%;
+    }
+    .navbar-collapse .div-info-contacto .a-numero {
+        padding-right: 0;
+        border-right: none;
+    }
+    .navbar-collapse .div-info-contacto .a-correo {
+        padding-left: 0;
+    }
+    .navbar-collapse .div-items .nav-link {
         text-align: center;
     }
 }
@@ -1503,6 +1522,9 @@ ul {
     .seccion-perfil .div-general .div-informacion .div-text .p-informacion {
         text-align: justify;
     }
+    .seccion-perfil .div-general .div-informacion .div-text .p-cargo {
+        text-align: center;
+    }
 }
 
 @media (max-width: 600px) {
@@ -1721,7 +1743,6 @@ textarea {
         font-size: 30px;
     }
     .seccion-contacto .div-general-contacto .div-formulario form .div-texto .p-text {
-        font-family: 'Century gothic';
         font-size: 20px;
     }
     .seccion-contacto .div-general-contacto .div-formulario form .div-campo {
@@ -1740,5 +1761,46 @@ textarea {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+}
+
+
+/*Estilos para la seccion FAQ*/
+
+.seccion-FAQ {
+    width: 100%;
+    height: auto;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(241, 241, 241);
+}
+
+.seccion-FAQ .div-text {
+    width: 90%;
+    height: auto;
+}
+
+.seccion-FAQ .div-text h2 {
+    font-family: 'Agency FB';
+    font-size: 60px;
+    font-weight: bold;
+    color: var(--azulFuerte);
+}
+
+.seccion-FAQ .div-text p {
+    font-family: 'Century gothic';
+    font-size: 25px;
+    text-align: justify;
+}
+
+@media (max-width: 750px) {
+    .seccion-FAQ .div-text h2 {
+        font-size: 40px;
+    }
+    .seccion-FAQ .div-text p {
+        font-size: 18px;
     }
 }
