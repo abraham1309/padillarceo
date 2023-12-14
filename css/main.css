@@ -1184,7 +1184,7 @@ footer .div-informacion .div-informacion-legal .a-politica {
 }
 
 .seccion-nuestra-informacion .div-objectivos-valores .div-valores .div-texto p,
-ul {
+.ul-valores {
     color: #fff;
     font-size: 20px;
     font-family: 'Century gothic';
@@ -1238,7 +1238,7 @@ ul {
         font-size: 40px;
     }
     .seccion-nuestra-informacion .div-objectivos-valores .div-valores .div-texto p,
-    ul {
+    .ul-valores {
         font-size: 18px;
         text-align: justify;
     }
@@ -1802,5 +1802,129 @@ textarea {
     }
     .seccion-FAQ .div-text p {
         font-size: 18px;
+    }
+}
+
+
+/* ---Estilos para las paginas de docuemntos legales--- */
+
+
+/* Estilos para la seccion titulo */
+
+.seccion-titulo {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--azulIntermedio);
+}
+
+.seccion-titulo .div-text {
+    width: 90%;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.seccion-titulo .div-text h3 {
+    color: #fff;
+    font-size: 80px;
+    font-family: 'Agency FB';
+    font-weight: bold;
+}
+
+.seccion-titulo .div-text p {
+    color: #fff;
+    font-size: 28px;
+    font-family: 'Century gothic';
+    margin-top: -10px;
+}
+
+@media (max-width: 945px) {
+    .seccion-titulo .div-text h3 {
+        font-size: 60px;
+    }
+    .seccion-titulo .div-text p {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 750px) {
+    .seccion-titulo .div-text h3 {
+        font-size: 40px;
+    }
+    .seccion-titulo .div-text p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .seccion-titulo .div-text h3 {
+        font-size: 30px;
+    }
+    .seccion-titulo .div-text p {
+        font-size: 18px;
+    }
+}
+
+
+/* Estilos para el contenido */
+
+.seccion-contenido {
+    height: auto;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-contenido .div-text {
+    height: auto;
+    width: 90%;
+    padding: 3%;
+    font-size: 25px;
+    font-family: 'Century gothic';
+    text-align: justify;
+    line-height: 32px;
+    background-color: #F1F1F1;
+}
+
+.seccion-contenido .div-text .div-atentamente {
+    width: 100%;
+    text-align: center;
+}
+
+.seccion-contenido .div-text .div-atentamente .p-atentamente {
+    font-size: 35px !important;
+}
+
+.seccion-contenido .div-text .div-atentamente .p-padilla {
+    font-size: 45px !important;
+    color: var(--azulFuerte);
+}
+
+@media (max-width: 950px) {
+    .seccion-contenido .div-text .div-atentamente .p-atentamente {
+        font-size: 30px !important;
+    }
+    .seccion-contenido .div-text .div-atentamente .p-padilla {
+        font-size: 35px !important;
+    }
+}
+
+@media (max-width: 750px) {
+    .seccion-contenido .div-text {
+        width: 90%;
+        padding: 2%;
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .seccion-contenido .div-text .div-atentamente .p-atentamente {
+        font-size: 20px !important;
+    }
+    .seccion-contenido .div-text .div-atentamente .p-padilla {
+        font-size: 25px !important;
     }
 }
