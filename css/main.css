@@ -1928,3 +1928,274 @@ textarea {
         font-size: 25px !important;
     }
 }
+
+
+/* Estilos para los perfiles */
+
+.seccion-perfil-individual {
+    width: 100%;
+    height: auto;
+}
+
+.seccion-perfil-individual .div-cabezera {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-perfil-individual .div-cabezera .div-imagen-fondo {
+    width: 100%;
+    height: 40vh;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-image: url("../Imagenes/fondo-portada-1.jpg");
+}
+
+.seccion-perfil-individual .div-cabezera .div-foto-perfil {
+    position: absolute;
+    width: auto;
+    height: auto;
+    margin-bottom: -30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.seccion-perfil-individual .div-cabezera .div-foto-perfil img {
+    width: 300px;
+    border-radius: 100%;
+}
+
+.seccion-perfil-individual .div-cabezera .div-foto-perfil h2 {
+    font-family: 'Agency FB';
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--azulFuerte);
+}
+
+.seccion-perfil-individual .div-cabezera .div-foto-perfil p {
+    font-family: 'Century gothic';
+    font-size: 30px;
+    line-height: 10px;
+}
+
+.seccion-descripcion {
+    width: 100%;
+    height: 35rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.seccion-descripcion .div-informacion {
+    width: 90%;
+    height: auto;
+    margin-bottom: 2%;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: #0C1F42;
+    z-index: 1;
+    /*
+    -webkit-box-shadow: 25px 26px 39px -35px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 25px 26px 39px -35px rgba(0, 0, 0, 0.75);
+    box-shadow: 25px 26px 39px -35px rgba(0, 0, 0, 0.75);
+    */
+}
+
+.seccion-descripcion .div-informacion p {
+    font-family: 'Century gothic';
+    font-size: 25px;
+    text-align: justify;
+    color: #fff;
+}
+
+.seccion-datos {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.seccion-datos .div-general {
+    width: 90%;
+    height: auto;
+    display: flex;
+}
+
+.seccion-datos .div-general .div-izquierdo {
+    width: 50%;
+    height: auto;
+}
+
+.seccion-datos .div-general .div-izquierdo .div-informacion-grande {
+    width: 95%;
+    height: auto;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: #f1f1f1;
+}
+
+.seccion-datos .div-general .div-izquierdo .div-informacion-grande p {
+    font-family: 'Century gothic';
+    font-size: 22px;
+    text-align: justify;
+}
+
+.seccion-datos .div-general .div-derecho {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.seccion-datos .div-general .div-derecho .div-informacion-chico {
+    width: 95%;
+    height: auto;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: #F1F1F1;
+}
+
+.seccion-datos .div-general .div-derecho .div-informacion-chico p {
+    font-family: 'Century gothic';
+    font-size: 22px;
+    text-align: justify;
+}
+
+.seccion-datos .div-largo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-datos .div-largo .div-informacion-largo {
+    width: 90%;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: #F1F1F1;
+}
+
+.seccion-datos .div-largo .div-informacion-largo p {
+    font-family: 'Century gothic';
+    font-size: 22px;
+    text-align: justify;
+}
+
+.seccion-datos .div-largo .div-informacion-largo .div-publicacion {
+    width: 90%;
+    padding: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.seccion-datos .div-largo .div-informacion-largo .div-publicacion p,
+a {
+    font-family: 'Century gothic';
+    font-size: 22px;
+    text-align: justify;
+}
+
+@media (max-width: 1200px) {
+    .seccion-descripcion {
+        margin-top: 5%;
+    }
+}
+
+@media (max-width: 900px) {
+    .seccion-descripcion {
+        margin-top: 10%;
+    }
+}
+
+@media (max-width: 810px) {
+    .seccion-descripcion {
+        margin-top: 20%;
+    }
+}
+
+@media (max-width: 710px) {
+    .seccion-descripcion {
+        margin-top: 5%;
+    }
+    .seccion-perfil-individual .div-cabezera .div-foto-perfil h2 {
+        width: 90%;
+        font-size: 45px;
+    }
+    .seccion-perfil-individual .div-cabezera .div-foto-perfil p {
+        font-size: 25px;
+    }
+    .seccion-descripcion .div-informacion p {
+        font-size: 18px;
+    }
+    .seccion-datos .div-general .div-izquierdo .div-informacion-grande p {
+        font-size: 18px;
+    }
+    .seccion-datos .div-general .div-derecho .div-informacion-chico p {
+        font-size: 18px;
+    }
+    .seccion-datos .div-largo .div-informacion-largo p {
+        font-size: 18px;
+    }
+    .seccion-datos .div-largo .div-informacion-largo .div-publicacion p,
+    a {
+        font-size: 18px;
+    }
+    .seccion-datos .div-general {
+        display: flex;
+        flex-direction: column;
+    }
+    .seccion-datos .div-general .div-izquierdo {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .seccion-datos .div-general .div-derecho {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .seccion-datos .div-general .div-izquierdo .div-informacion-grande {
+        width: 100%;
+    }
+    .seccion-datos .div-general .div-derecho .div-informacion-chico {
+        width: 100%;
+    }
+}
+
+@media (max-width: 550px) {
+    .seccion-descripcion {
+        margin-top: 10rem;
+    }
+    .seccion-perfil-individual .div-cabezera .div-foto-perfil img {
+        width: 225px;
+    }
+}
+
+@media (max-width: 450px) {
+    .seccion-descripcion {
+        margin-top: 10rem;
+    }
+}
+
+@media (max-width: 410px) {
+    .seccion-descripcion {
+        margin-top: 13rem;
+    }
+}
