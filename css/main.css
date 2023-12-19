@@ -1569,6 +1569,14 @@ footer .div-informacion .div-informacion-legal .a-politica {
     margin-bottom: 8%;
 }
 
+.seccion-contacto .div-general-contacto .div-general-redes .div-redes .div-1 .a-correo-padilla {
+    font-size: 22px;
+}
+
+.seccion-contacto .div-general-contacto .div-general-redes .div-redes .div-2 iframe {
+    width: 90%;
+}
+
 .seccion-contacto .div-general-contacto .div-general-redes .div-redes p {
     color: #fff;
     font-size: 40px;
@@ -1653,6 +1661,11 @@ textarea {
     background: #2797ff;
     color: #fff;
     font-weight: bold;
+    transition: all 1s ease;
+}
+
+.seccion-contacto .div-general-contacto .div-formulario form .div-campo .btn-enviar:hover {
+    background-color: #0e4ebf;
 }
 
 @media (max-width: 1300px) {
@@ -1691,6 +1704,9 @@ textarea {
     .seccion-contacto .div-general-contacto .div-formulario form .div-campo p {
         margin-bottom: -3px;
         font-size: 20px;
+    }
+    .seccion-contacto .div-general-contacto .div-general-redes .div-redes .div-1 .a-correo-padilla {
+        font-size: 18px;
     }
 }
 
@@ -1761,6 +1777,9 @@ textarea {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .seccion-contacto .div-general-contacto .div-general-redes .div-redes .div-2 iframe {
+        width: 95%;
     }
 }
 
@@ -2197,5 +2216,165 @@ a {
 @media (max-width: 410px) {
     .seccion-descripcion {
         margin-top: 13rem;
+    }
+}
+
+
+/* Estilos para los datos de contacto */
+
+
+/* Estilos para el inicio (solo cambiamos la imagen de fondo) */
+
+.seccion-inicio-curso .div-imagen-fondo-contacto {
+    background-position: center bottom !important;
+    background-image: linear-gradient( to bottom, rgba(12, 31, 66, 0.60), rgba(12, 31, 66, 0.60)), url("../Imagenes/Datos\ de\ contacto.jpg");
+}
+
+.seccion-contenido-contacto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+}
+
+.seccion-contenido-contacto .div-logo-contacto {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-contenido-contacto .div-logo-contacto img {
+    width: 30%;
+}
+
+.seccion-contenido-contacto .div-lista-contactos {
+    width: 90%;
+}
+
+.seccion-contenido-contacto .div-lista-contactos .div-contendor .div-tarjeta {
+    display: flex;
+    margin-bottom: 5%;
+}
+
+.seccion-contenido-contacto .div-lista-contactos .div-contendor .div-t-derecha {
+    justify-content: right;
+}
+
+.seccion-contenido-contacto .div-lista-contactos .div-contendor .div-tarjeta .div-contenedor-datos {
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #dbdbdb;
+}
+
+.seccion-contenido-contacto .div-lista-contactos .div-contendor .div-tarjeta .div-contenedor-datos .div-nombre {
+    width: 30%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #000;
+    border-right: 2px solid var(--azulIntermedio);
+}
+
+.seccion-contenido-contacto .div-lista-contactos .div-contendor .div-tarjeta .div-contenedor-datos .div-nombre .div-contenedor-nombre {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.seccion-contenido-contacto .div-lista-contactos .div-contendor .div-tarjeta .div-contenedor-datos .div-nombre .div-contenedor-nombre h3 {
+    font-family: 'Century gothic';
+    font-size: 25px;
+    color: var(--azulFuerte);
+    font-weight: bold;
+}
+
+.seccion-contenido-contacto .div-lista-contactos .div-contendor .div-tarjeta .div-contenedor-datos .div-nombre .div-contenedor-nombre p {
+    margin-top: -10px;
+    font-family: 'Century gothic';
+    font-size: 20px;
+}
+
+.seccion-contenido-contacto .div-lista-contactos .div-contendor .div-tarjeta .div-contenedor-datos .div-datos {
+    width: 70%;
+}
+
+.seccion-contenido-contacto .div-lista-contactos .div-contendor .div-tarjeta .div-contenedor-datos .div-datos .div-contenedor-contacto {
+    width: 90%;
+    height: 70%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+
+.seccion-contenido-contacto .div-lista-contactos .div-contendor .div-tarjeta .div-contenedor-datos .div-datos .div-contenedor-contacto p {
+    color: #000;
+    font-family: 'Century gothic';
+    font-size: 20px;
+    text-align: center;
+}
+
+.seccion-contenido-contacto .div-lista-contactos .div-contendor .div-tarjeta .div-contenedor-datos .div-datos .div-contenedor-contacto p img {
+    width: 40px;
+}
+
+@media (max-width: 1199px) {
+    .seccion-contenido-contacto .div-lista-contactos .div-contendor .div-tarjeta .div-contenedor-datos {
+        width: 100%;
+    }
+    .seccion-contenido-contacto .div-lista-contactos .div-contendor .div-t-izquierdo {
+        justify-content: center;
+    }
+    .seccion-contenido-contacto .div-lista-contactos .div-contendor .div-t-derecha {
+        justify-content: center;
+    }
+    .seccion-contenido-contacto .div-logo-contacto img {
+        width: 50%;
+    }
+}
+
+@media (max-width: 700px) {
+    .seccion-contenido-contacto .div-logo-contacto img {
+        width: 90%;
+    }
+    .seccion-contenido-contacto .div-lista-contactos .div-contendor .div-tarjeta .div-contenedor-datos .div-nombre .div-contenedor-nombre h3 {
+        font-size: 20px;
+    }
+    .seccion-contenido-contacto .div-lista-contactos .div-contendor .div-tarjeta .div-contenedor-datos .div-nombre .div-contenedor-nombre p {
+        margin-top: -10px;
+        font-size: 18px;
+    }
+    .seccion-contenido-contacto .div-lista-contactos .div-contendor .div-tarjeta .div-contenedor-datos .div-datos .div-contenedor-contacto p {
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 10%;
+    }
+    .seccion-contenido-contacto .div-lista-contactos .div-contendor .div-tarjeta .div-contenedor-datos {
+        flex-direction: column;
+    }
+    .seccion-contenido-contacto .div-lista-contactos .div-contendor .div-tarjeta .div-contenedor-datos .div-nombre {
+        width: 90%;
+        height: 70%;
+        border-right: none;
+        margin-top: 8%;
+        border-bottom: 2px solid var(--azulIntermedio);
+    }
+    .seccion-contenido-contacto .div-lista-contactos .div-contendor .div-tarjeta .div-contenedor-datos .div-datos {
+        width: 90%;
     }
 }
