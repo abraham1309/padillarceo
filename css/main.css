@@ -55,6 +55,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 8px;
 }
 
 .navbar-collapse .div-info-contacto a {
@@ -143,7 +144,7 @@
 }
 
 .logotipo-navbar {
-    width: 100px;
+    width: 85px;
 }
 
 .content {
@@ -215,7 +216,7 @@
 
 @media (max-width: 600px) {
     .logotipo-navbar {
-        width: 70px;
+        width: 65px;
     }
 }
 
