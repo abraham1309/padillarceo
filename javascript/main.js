@@ -78,3 +78,24 @@ addEventListener('DOMContentLoaded', () => {
         observer.observe(elementoHTML);
     });
 });
+
+/* Script para validar que los campos esten llenos */
+var camposLlenos = false;
+
+function validarCampos() {
+    console.log("Holaa");
+    var nombre = document.getElementById("inputNombre").value;
+    var correo = document.getElementById("inputCorreo").value;
+    var asunto = document.getElementById("inputAsunto").value;
+    var mensaje = document.getElementById("areaMensaje").value;
+
+    if (!nombre == "" && !correo == "" && asunto != "" && mensaje != "") {
+        document.getElementById("divCamposVacios").style.display = "none";
+        var inputConfirmacion = document.getElementById("inputConfirmacion");
+        inputConfirmacion.value = "true";
+        camposLlenos = true;
+    } else {
+        document.getElementById("divCamposVacios").style.display = "flex";
+        camposLlenos = false;
+    }
+}
