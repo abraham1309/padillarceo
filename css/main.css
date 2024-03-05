@@ -963,7 +963,6 @@ footer .div-informacion .div-informacion-legal .a-politica {
     background-repeat: no-repeat !important;
     background-size: cover !important;
     background-position: center center !important;
-    background-attachment: fixed;
     background-image: url("../Imagenes/derecho-civil-grande.jpg");
     z-index: -2;
 }
