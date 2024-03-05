@@ -996,6 +996,13 @@ footer .div-informacion .div-informacion-legal .a-politica {
     font-weight: bold;
 }
 
+.seccion-informacion .div-general-informacion .p-teA {
+    margin-top: -20px;
+    font-size: 28px;
+    font-family: 'Century gothic';
+    text-align: center;
+}
+
 .seccion-informacion .div-general-informacion ul {
     width: 90%;
     text-align: left;
@@ -1047,6 +1054,10 @@ footer .div-informacion .div-informacion-legal .a-politica {
     .seccion-informacion .div-general-informacion h2 {
         font-size: 40px;
     }
+    .seccion-informacion .div-general-informacion .p-teA {
+        margin-top: -13px;
+        font-size: 24px;
+    }
     .seccion-informacion .div-general-informacion ul {
         font-size: 18px;
     }
@@ -1056,6 +1067,10 @@ footer .div-informacion .div-informacion-legal .a-politica {
     .seccion-informacion .div-general-informacion h2 {
         font-size: 30px;
         line-height: 35px;
+    }
+    .seccion-informacion .div-general-informacion .p-teA {
+        margin-top: -13px;
+        font-size: 20px;
     }
     .seccion-informacion .div-general-informacion ul {
         font-size: 18px;
@@ -2152,6 +2167,12 @@ a {
     font-family: 'Century gothic';
     font-size: 22px;
     text-align: justify;
+}
+
+@media (max-width: 1400px) {
+    .seccion-descripcion {
+        margin-top: 5%;
+    }
 }
 
 @media (max-width: 1200px) {
