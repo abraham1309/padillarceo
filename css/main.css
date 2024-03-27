@@ -2340,6 +2340,7 @@ a {
         align-items: center;
         flex-direction: column;
         margin-bottom: 10%;
+        text-align: center;
     }
     .seccion-contenido-contacto .div-lista-contactos .div-contendor .div-tarjeta .div-contenedor-datos {
         flex-direction: column;
