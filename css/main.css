@@ -1179,6 +1179,9 @@
 }
 
 @media (max-width: 550px) {
+    .seccion-inicio-curso .div-texto h2 {
+        font-size: 40px;
+    }
     .seccion-nuestra-mision-curso .div-texto h2 {
         font-size: 40px;
     }
@@ -2297,7 +2300,7 @@ a {
     color: #000;
     font-family: 'Century gothic';
     font-size: 20px;
-    text-align: center;
+    text-align: left;
 }
 
 .seccion-contenido-contacto .div-lista-contactos .div-contendor .div-tarjeta .div-contenedor-datos .div-datos .div-contenedor-contacto p img {
