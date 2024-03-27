@@ -843,106 +843,6 @@
 }
 
 
-/* Estilos para el footer */
-
-footer {
-    width: 100%;
-    height: auto;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    background-color: #050d1b;
-}
-
-footer .div-general-logo {
-    width: 100%;
-    height: 30%;
-    margin-bottom: 2%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-footer .div-general-logo .div-linea-1 {
-    width: 40%;
-    height: 2px;
-    background-color: var(--azulClaro);
-}
-
-footer .div-general-logo .div-logo {
-    width: 10%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-footer .div-general-logo .div-logo img {
-    width: 150px;
-}
-
-footer .div-general-logo .div-linea-2 {
-    width: 40%;
-    height: 2px;
-    background-color: var(--azulClaro);
-}
-
-footer .div-informacion {
-    width: 100%;
-    height: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-footer .div-informacion p {
-    color: #fff;
-    font-family: 'Century gothic';
-    font-size: 19px;
-}
-
-footer .div-informacion .div-informacion-legal .a-informacion {
-    color: #fff;
-    font-family: 'Century gothic';
-    font-size: 19px;
-    text-align: center;
-    padding-right: 10px;
-}
-
-footer .div-informacion .div-informacion-legal .a-politica {
-    color: #fff;
-    font-family: 'Century gothic';
-    font-size: 19px;
-    text-align: center;
-    padding-left: 11px;
-    border-left: 1px solid var(--azulClaro);
-}
-
-@media (max-width: 500px) {
-    footer {
-        padding-top: 10%;
-        padding-bottom: 10%;
-    }
-    footer .div-informacion {
-        justify-content: flex-start;
-    }
-    footer .div-informacion .div-informacion-legal .a-informacion {
-        padding-right: 0;
-        margin-bottom: 5px;
-    }
-    footer .div-informacion .div-informacion-legal .a-politica {
-        padding-left: 0;
-        border: none;
-    }
-    footer .div-informacion .div-informacion-legal {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-}
-
-
 /* --- Estilos para las paginas de areas de practicas individuales --- */
 
 
@@ -963,8 +863,33 @@ footer .div-informacion .div-informacion-legal .a-politica {
     background-repeat: no-repeat !important;
     background-size: cover !important;
     background-position: center center !important;
-    background-image: url("../Imagenes/derecho-civil-grande.jpg");
     z-index: -2;
+}
+
+.seccion-imagen .div-informacion {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.seccion-imagen .div-informacion h2 {
+    font-family: 'Century gothic';
+    color: #fff;
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.seccion-imagen .div-informacion .p-teA {
+    margin-top: -10px;
+    color: #fff;
+    font-size: 35px;
+    font-family: 'Century gothic';
+    text-align: center;
 }
 
 .seccion-informacion {
@@ -988,20 +913,6 @@ footer .div-informacion .div-informacion-legal .a-politica {
     background-color: #F1F1F1;
 }
 
-.seccion-informacion .div-general-informacion h2 {
-    font-family: 'Agency FB';
-    color: var(--azulFuerte);
-    font-size: 60px;
-    font-weight: bold;
-}
-
-.seccion-informacion .div-general-informacion .p-teA {
-    margin-top: -20px;
-    font-size: 28px;
-    font-family: 'Century gothic';
-    text-align: center;
-}
-
 .seccion-informacion .div-general-informacion ul {
     width: 90%;
     text-align: left;
@@ -1016,46 +927,45 @@ footer .div-informacion .div-informacion-legal .a-politica {
 }
 
 .seccion-imagen .imagen-civil {
-    background-image: url("../Imagenes/derecho-civil-grande.jpg");
+    background-image: linear-gradient( to bottom, rgba(12, 31, 66, 0.50), rgba(12, 31, 66, 0.50)), url("../Imagenes/derecho-civil-grande.jpg");
 }
 
 .seccion-imagen .imagen-mercantil {
-    background-image: url("../Imagenes/derecho-mercantil-grande.jpg");
+    background-image: linear-gradient( to bottom, rgba(12, 31, 66, 0.50), rgba(12, 31, 66, 0.50)), url("../Imagenes/derecho-mercantil-grande.jpg");
 }
 
 .seccion-imagen .imagen-sucesorio {
-    background-image: url("../Imagenes/derecho-sucesorio-grande.jpg");
+    background-image: linear-gradient( to bottom, rgba(12, 31, 66, 0.50), rgba(12, 31, 66, 0.50)), url("../Imagenes/derecho-sucesorio-grande.jpg");
 }
 
 .seccion-imagen .imagen-agrario {
-    background-image: url("../Imagenes/derecho-agrario-grande.jpg");
+    background-image: linear-gradient( to bottom, rgba(12, 31, 66, 0.50), rgba(12, 31, 66, 0.50)), url("../Imagenes/derecho-agrario-grande.jpg");
 }
 
 .seccion-imagen .imagen-inmobiliario {
-    background-image: url("../Imagenes/derecho-inmobiliario-grande.jpg");
+    background-image: linear-gradient( to bottom, rgba(12, 31, 66, 0.50), rgba(12, 31, 66, 0.50)), url("../Imagenes/derecho-inmobiliario-grande.jpg");
 }
 
 .seccion-imagen .imagen-gestorias {
-    background-image: url("../Imagenes/gestorias.jpg");
+    background-image: linear-gradient( to bottom, rgba(12, 31, 66, 0.50), rgba(12, 31, 66, 0.50)), url("../Imagenes/gestorias.jpg");
 }
 
 .seccion-imagen .imagen-otros {
-    background-image: url("../Imagenes/otros-grande.jpg");
+    background-image: linear-gradient( to bottom, rgba(12, 31, 66, 0.50), rgba(12, 31, 66, 0.50)), url("../Imagenes/otros-grande.jpg");
 }
 
 @media (max-width: 500px) {
+    .seccion-imagen .div-informacion h2 {
+        font-size: 35px;
+    }
+    .seccion-imagen .div-informacion .p-teA {
+        font-size: 25px;
+    }
     .seccion-informacion .div-general-informacion {
         margin-bottom: 10%;
         margin-top: 10%;
         padding-top: 5%;
         padding-bottom: 5%;
-    }
-    .seccion-informacion .div-general-informacion h2 {
-        font-size: 40px;
-    }
-    .seccion-informacion .div-general-informacion .p-teA {
-        margin-top: -13px;
-        font-size: 24px;
     }
     .seccion-informacion .div-general-informacion ul {
         font-size: 18px;
@@ -1063,12 +973,10 @@ footer .div-informacion .div-informacion-legal .a-politica {
 }
 
 @media (max-width: 380px) {
-    .seccion-informacion .div-general-informacion h2 {
-        font-size: 30px;
-        line-height: 35px;
+    .seccion-imagen .div-informacion h2 {
+        font-size: 28px;
     }
-    .seccion-informacion .div-general-informacion .p-teA {
-        margin-top: -13px;
+    .seccion-imagen .div-informacion .p-teA {
         font-size: 20px;
     }
     .seccion-informacion .div-general-informacion ul {
@@ -1095,6 +1003,7 @@ footer .div-informacion .div-informacion-legal .a-politica {
     font-size: 80px;
     font-family: 'Agency FB';
     font-weight: bold;
+    text-align: center;
 }
 
 .seccion-inicio-curso .div-imagen-fondo {
@@ -1111,195 +1020,207 @@ footer .div-informacion .div-informacion-legal .a-politica {
 
 /* Estilos para la seccion de nuestra mision, objectivos y valores */
 
-.seccion-nuestra-informacion {
-    height: 100vh;
-    width: 100%;
+.seccion-nuestra-mision-curso {
+    height: auto;
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
 
-.seccion-nuestra-informacion .div-mision {
-    height: 30%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-}
-
-.seccion-nuestra-informacion .div-mision .div-texto {
+.seccion-nuestra-mision-curso .div-texto {
     width: 90%;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
-.seccion-nuestra-informacion .div-mision .div-texto h2 {
-    font-family: 'Agency FB';
+.seccion-nuestra-mision-curso .div-texto h2 {
     color: var(--azulFuerte);
-    font-size: 50px;
-    font-weight: bold;
-}
-
-.seccion-nuestra-informacion .div-mision .div-texto p {
-    font-size: 20px;
-    font-family: 'Century gothic';
-}
-
-.seccion-nuestra-informacion .div-objectivos-valores {
-    height: 70%;
-    width: 100%;
-    display: flex;
-}
-
-.seccion-nuestra-informacion .div-objectivos-valores .div-imagen-fondo {
-    position: absolute;
-    height: 70%;
-    width: 50%;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-    background-position: center center !important;
-    z-index: -2;
-}
-
-.seccion-nuestra-informacion .div-objectivos-valores .fondo-objectivos {
-    background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../Imagenes/objetivos.jpg");
-}
-
-.seccion-nuestra-informacion .div-objectivos-valores .fondo-valores {
-    background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../Imagenes/lupa.jpg");
-}
-
-.seccion-nuestra-informacion .div-objectivos-valores .div-objectivos {
-    height: 100%;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.seccion-nuestra-informacion .div-objectivos-valores .div-objectivos .div-texto {
-    height: auto;
-    width: 90%;
-}
-
-.seccion-nuestra-informacion .div-objectivos-valores .div-objectivos .div-texto h2 {
-    color: #fff;
-    font-size: 50px;
+    font-size: 60px;
     font-family: 'Agency FB';
     font-weight: bold;
 }
 
-.seccion-nuestra-informacion .div-objectivos-valores .div-objectivos .div-texto p {
-    color: #fff;
-    font-size: 20px;
+.seccion-nuestra-mision-curso .div-texto p {
+    color: #000;
+    font-size: 25px;
     font-family: 'Century gothic';
-    text-align: left;
+    text-align: justify;
 }
 
-.seccion-nuestra-informacion .div-objectivos-valores .div-valores {
+
+/* Estilos para nuestros objectivos y valores */
+
+.seccion-objectivos-valores {
+    height: 75vh;
+    width: 100%;
+}
+
+.seccion-objectivos-valores .div-general-o-v {
+    width: 100%;
     height: 100%;
+    display: flex;
+}
+
+.seccion-objectivos-valores .div-general-o-v .div-objectivos-curso {
     width: 50%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.seccion-nuestra-informacion .div-objectivos-valores .div-valores {
-    height: 100%;
+.seccion-objectivos-valores .div-general-o-v .div-objectivos-curso .div-texto {
     width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
-.seccion-nuestra-informacion .div-objectivos-valores .div-valores .div-texto {
-    height: auto;
-    width: 90%;
-}
-
-.seccion-nuestra-informacion .div-objectivos-valores .div-valores .div-texto h2 {
+.seccion-objectivos-valores .div-general-o-v .div-objectivos-curso .div-texto h2 {
     color: #fff;
     font-size: 60px;
     font-family: 'Agency FB';
     font-weight: bold;
 }
 
-.seccion-nuestra-informacion .div-objectivos-valores .div-valores .div-texto p,
+.seccion-objectivos-valores .div-general-o-v .div-objectivos-curso .div-texto p {
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Century gothic';
+    text-align: justify;
+}
+
+.seccion-objectivos-valores .div-general-o-v .div-objectivos-curso .div-fondo-objectivos {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../Imagenes/objetivos.jpg");
+}
+
+.seccion-objectivos-valores .div-general-o-v .div-valores-curso {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: violet;
+}
+
+.seccion-objectivos-valores .div-general-o-v .div-valores-curso .div-fondo-valores {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../Imagenes/lupa.jpg");
+}
+
+.seccion-objectivos-valores .div-general-o-v .div-valores-curso .div-texto {
+    width: 50%;
+    position: absolute;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: right;
+}
+
+.seccion-objectivos-valores .div-general-o-v .div-valores-curso .div-texto .h2-valores {
+    color: #fff;
+    font-size: 60px;
+    font-family: 'Agency FB';
+    font-weight: bold;
+}
+
+.seccion-objectivos-valores .div-general-o-v .div-valores-curso .div-texto .p-valores,
 .ul-valores {
     color: #fff;
-    font-size: 20px;
+    font-size: 25px;
     font-family: 'Century gothic';
-    text-align: left;
+    text-align: right;
 }
 
-.seccion-nuestra-informacion .div-objectivos-valores .div-valores .div-texto ul {
-    line-height: 32px;
-}
-
-@media (max-width: 1200px) {
-    .seccion-nuestra-informacion .div-mision {
-        height: auto;
-        padding-top: 5%;
-        padding-bottom: 5%;
-    }
-    .seccion-nuestra-informacion .div-objectivos-valores .div-objectivos {
-        height: 80%;
-    }
-    .seccion-nuestra-informacion .div-objectivos-valores .div-valores {
-        height: 80%;
-    }
-    .seccion-nuestra-informacion .div-objectivos-valores .div-imagen-fondo {
-        height: 80%;
-    }
-}
-
-@media (max-width: 600px) {
-    .seccion-inicio-curso .div-texto h2 {
-        font-size: 40px;
-        text-align: center;
-    }
-    .seccion-nuestra-informacion {
+@media (max-width: 1000px) {
+    .seccion-objectivos-valores {
         height: auto;
     }
-    .seccion-nuestra-informacion .div-mision .div-texto h2 {
-        font-size: 40px;
+    .seccion-objectivos-valores .div-general-o-v .div-objectivos-curso .div-fondo-objectivos {
+        height: 65vh;
     }
-    .seccion-nuestra-informacion .div-mision .div-texto p {
-        font-size: 18px;
-        text-align: justify;
-    }
-    .seccion-nuestra-informacion .div-objectivos-valores .div-objectivos .div-texto h2 {
-        font-size: 40px;
-    }
-    .seccion-nuestra-informacion .div-objectivos-valores .div-objectivos .div-texto p {
-        font-size: 18px;
-        text-align: justify;
-    }
-    .seccion-nuestra-informacion .div-objectivos-valores .div-valores .div-texto h2 {
-        font-size: 40px;
-    }
-    .seccion-nuestra-informacion .div-objectivos-valores .div-valores .div-texto p,
-    .ul-valores {
-        font-size: 18px;
-        text-align: justify;
-    }
-    .seccion-nuestra-informacion .div-objectivos-valores {
-        height: auto;
-        width: 100%;
-        display: flex;
+    .seccion-objectivos-valores .div-general-o-v {
         flex-direction: column;
     }
-    .seccion-nuestra-informacion .div-objectivos-valores .div-objectivos {
-        height: 450px;
+    .seccion-objectivos-valores .div-general-o-v .div-objectivos-curso {
         width: 100%;
     }
-    .seccion-nuestra-informacion .div-objectivos-valores .div-valores {
-        height: 500px;
+    .seccion-objectivos-valores .div-general-o-v .div-objectivos-curso .div-texto {
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    /* Valores */
+    .seccion-objectivos-valores .div-general-o-v .div-valores-curso {
         width: 100%;
     }
-    .seccion-nuestra-informacion .div-objectivos-valores .div-imagen-fondo {
-        height: 500px;
+    .seccion-objectivos-valores .div-general-o-v .div-valores-curso .div-fondo-valores {
+        height: 65vh;
+    }
+    .seccion-objectivos-valores .div-general-o-v .div-valores-curso .div-texto {
         width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .seccion-objectivos-valores .div-general-o-v .div-valores-curso .div-texto .p-valores,
+    .ul-valores,
+    .h2-valores {
+        text-align: justify;
+    }
+}
+
+@media (max-width: 550px) {
+    .seccion-nuestra-mision-curso .div-texto h2 {
+        font-size: 40px;
+    }
+    .seccion-nuestra-mision-curso .div-texto p {
+        font-size: 18px;
+    }
+    .seccion-objectivos-valores .div-general-o-v .div-objectivos-curso .div-texto h2 {
+        font-size: 40px;
+    }
+    .seccion-objectivos-valores .div-general-o-v .div-objectivos-curso .div-texto p {
+        font-size: 18px;
+    }
+    .seccion-objectivos-valores .div-general-o-v .div-objectivos-curso .div-fondo-objectivos {
+        height: 60vh;
+    }
+    .seccion-objectivos-valores .div-general-o-v .div-valores-curso .div-texto .h2-valores {
+        font-size: 40px;
+    }
+    .seccion-objectivos-valores .div-general-o-v .div-valores-curso .div-texto .p-valores,
+    .ul-valores {
+        font-size: 18px;
+    }
+    .seccion-objectivos-valores .div-general-o-v .div-valores-curso .div-fondo-valores {
+        height: 60vh;
+    }
+}
+
+@media (max-width: 380px) {
+    .seccion-objectivos-valores .div-general-o-v .div-objectivos-curso .div-fondo-objectivos {
+        height: 70vh;
+    }
+    .seccion-objectivos-valores .div-general-o-v .div-valores-curso .div-fondo-valores {
+        height: 70vh;
+    }
+}
+
+@media (max-width: 300px) {
+    .seccion-objectivos-valores .div-general-o-v .div-objectivos-curso .div-fondo-objectivos {
+        height: 90vh;
+    }
+    .seccion-objectivos-valores .div-general-o-v .div-valores-curso .div-fondo-valores {
+        height: 90vh;
     }
 }
 
@@ -1516,8 +1437,14 @@ footer .div-informacion .div-informacion-legal .a-politica {
     background: #d7eeff;
 }
 
-.seccion-perfil .div-general .div-informacion .div-text img {
+.seccion-perfil .div-general .div-informacion .div-text .p-firma {
+    width: 100%;
+    text-align: right;
+}
+
+.seccion-perfil .div-general .div-informacion .div-text .p-firma img {
     width: 350px;
+    text-align: center;
 }
 
 @media (max-width: 1300px) {
@@ -1530,7 +1457,7 @@ footer .div-informacion .div-informacion-legal .a-politica {
     .seccion-perfil .div-general .div-informacion .div-text .p-informacion {
         font-size: 20px;
     }
-    .seccion-perfil .div-general .div-informacion .div-text img {
+    .seccion-perfil .div-general .div-informacion .div-text .p-firma img {
         width: 250px;
     }
 }
@@ -2465,4 +2392,104 @@ a {
     color: rgb(220, 53, 69);
     margin: 0px 0px;
     text-align: center;
+}
+
+
+/* Estilos para el footer */
+
+footer {
+    width: 100%;
+    height: auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: #050d1b;
+}
+
+footer .div-general-logo {
+    width: 100%;
+    height: 30%;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .div-general-logo .div-linea-1 {
+    width: 40%;
+    height: 2px;
+    background-color: var(--azulClaro);
+}
+
+footer .div-general-logo .div-logo {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .div-general-logo .div-logo img {
+    width: 150px;
+}
+
+footer .div-general-logo .div-linea-2 {
+    width: 40%;
+    height: 2px;
+    background-color: var(--azulClaro);
+}
+
+footer .div-informacion {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .div-informacion p {
+    color: #fff;
+    font-family: 'Century gothic';
+    font-size: 19px;
+}
+
+footer .div-informacion .div-informacion-legal .a-informacion {
+    color: #fff;
+    font-family: 'Century gothic';
+    font-size: 19px;
+    text-align: center;
+    padding-right: 10px;
+}
+
+footer .div-informacion .div-informacion-legal .a-politica {
+    color: #fff;
+    font-family: 'Century gothic';
+    font-size: 19px;
+    text-align: center;
+    padding-left: 11px;
+    border-left: 1px solid var(--azulClaro);
+}
+
+@media (max-width: 500px) {
+    footer {
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+    footer .div-informacion {
+        justify-content: flex-start;
+    }
+    footer .div-informacion .div-informacion-legal .a-informacion {
+        padding-right: 0;
+        margin-bottom: 5px;
+    }
+    footer .div-informacion .div-informacion-legal .a-politica {
+        padding-left: 0;
+        border: none;
+    }
+    footer .div-informacion .div-informacion-legal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 }
